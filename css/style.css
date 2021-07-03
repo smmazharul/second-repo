@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+.navbar ul{}
+.navbar ul li{}
+.navbar ul li a{}
