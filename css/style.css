@@ -7,34 +7,135 @@
 /* navbar */
 .navbar{
     display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: gray;
-    position:sticky;
-    top: 0;
+    justify-content: center;
+    align-content: center;
+   
 }
 .navbar ul{
     display: flex;
+    padding: 20px ;
     list-style: none;
-    margin: 20px 0;
+   
 }
 .navbar ul li{
-   font-family: century;
-   font-size: 1.1rem;
-   font-weight: 700;
+  padding: 0 30px;
+ 
 
 }
 .navbar ul li a{
     text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
     color: white;
-    padding: 8px 35px;
-    transition: all .5s ease;
-
 }
 .navbar ul li a:hover{
-    color: black;
-    background: white;
-    box-shadow: 0 0 10px white;
+    background:white;
+    color:black ;
+    padding: 3px 10px;
+    box-shadow: 0px 0px 20px white;
     border-radius: 5px;
+    transform:all .5s ease ;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 840px;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#home::before{
+    content: "";
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-image: url(../images/Banner01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+}
+.color-orang{
+    color: orange;
+}
+.main{
+display: flex;
+flex-direction: column;
+/* border: 2px solid white; */
+padding: 20px;
+align-items: center;
+position: absolute;
+right: 65%;
+width: 326px;
+text-align: justify;
 
+ 
+}
+.main h1{
+   font-family: century;
+   color: white;
+   font-size:28px ;
+   margin-bottom: 20px;
+   
+}
+.main p{
+    color: rgba(197, 194, 194, 0.822);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.main .btn{
+    padding: 5px 30%;
+    margin-right: 55px;
+    font-weight: 700;
+    font-size: 13px;
+    
+}
+
+.main .btn:hover{
+    background: orange;
+    color: black;
+    transition: all .5s ease;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+/* header part end */
+
+/* about part start  */
+.about{
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+.about h1{
+    color: orange;
+    margin: 50px;
+   
+}
+.about-content {
+    border: 5px solid;
+    border-image: linear-gradient(rgb(0, 0, 0),rgb(95, 94, 94));
+    border-image-slice: 30;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 7px rgb(51, 50, 50);
+    
+
+}
+.about-content h2{
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: 30px;
+    color: gray;
+    text-decoration:underline;
+    
+}
+.about-content p{
+    text-align: justify;
 }
